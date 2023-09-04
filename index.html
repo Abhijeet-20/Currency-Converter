@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz@9..40&family=Eczar&family=Finger+Paint&family=Inter:wght@300&family=Poppins&family=Press+Start+2P&family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Currency Converter</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Currency Converter</h1>
+        <div class="currency-div">
+            <select id="currency1">
+                <option value="AUD">AUD</option>
+                <option value="CAD">CAD</option>
+                <option value="INR">INR</option>
+                <option value="EUR">EUR</option>
+                <option value="GBP">GBP</option>
+                <option value="JPY">JPY</option>
+                <option value="USD" selected>USD</option>
+            </select>
+            <input type="number" id="first" value="1" min="0">
+        </div>
+
+        <div class="currency-div">
+            <select id="currency2">
+                <option value="AUD">AUD</option>
+                <option value="CAD">CAD</option>
+                <option value="INR" selected>INR</option>
+                <option value="EUR">EUR</option>
+                <option value="GBP">GBP</option>
+                <option value="JPY">JPY</option>
+                <option value="USD">USD</option>
+            </select>
+            <input type="number" id="second" disabled>
+        </div>
+
+        <p class="exchangeRate" id="exchangeRate">1 USD = 138.3024 JPY</p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
